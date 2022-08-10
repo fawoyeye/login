@@ -33,7 +33,7 @@ box-shadow:5px 5px 20px 2px black;}
 .signin p{color: #00493a;margin-left:10px;}
 .signin button{width: 50%;height: 2rem;margin-left:10px;margin-top:1rem;border-radius: 3px;border:none;background: #00493a;display:block;}
 
-@media(max-width:960px;){
+@media(max-width:960px){
 .container,.signin{width: 75vw;}
 				
 }
