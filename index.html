@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+				<meta name="viewport" content="width=device-width initial-scale=1"/>
+			<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 				<title>Login</title>
+				<script src="https://kit.fontawesome.com/b2199eef70.js" crossorigin="anonymous"></script>
 				<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,12 +17,16 @@
 												<p>Phone Number or Email Address</p><input placeholder="johndoe@gmail.com" type="text" required>
 								</label>
 								<label>
-												<p>Password</p>
-												<input type="password" reqired>
+												<p>Password (Not less than 8 characters):</p>
+											<section class="j"><input class="pass" placeholder="***" type="password" required>
+												<i class="fa fa-eye" onclick="document.querySelector('.pass').type='text';document.querySelector('.fa-eye-slash').style.display='block';document.querySelector('.fa-eye').style.display='none';"></i>
+												<i onclick="document.querySelector('.pass').type='password';document.querySelector('.fa-eye').style.display='block';document.querySelector('.fa-eye-slash').style.display='none';" class=" fa fa-eye-slash"></i>
+											</section>
 								</label>
 								<button class="signInButton">Sign In</button>
 								</form>
-						<p>Don't have an account? <a href="index.html">Sign Up</a></p>
+						<p>Don't have an account? <a href="index2.html">Sign Up</a></p>
 				</section></main>
+				<script src="index.js"></script>
 </body>
 </html>
