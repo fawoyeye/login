@@ -19,7 +19,7 @@ box-shadow:5px 5px 20px 2px black;}
 .container label{padding:7px 0px 7px 0px;}
 .container a{text-decoration:none;}
 .date{background: transparent;}
-
+.signin a{color:#00735c;}
 
 
 
@@ -41,10 +41,10 @@ box-shadow:5px 5px 20px 2px black;}
 
 @media(min-width:700px) and (max-width:1024px){
 .container,.signin{width: 609px;max-height: 487px;font-size:1.5rem;}
-.fa-eye, .fa-eye-slash{margin-left:620px;}
+.fa-eye, .fa-eye-slash{margin-left:70vw;}
 				
 }
 @media(min-width:1024px){:root{font-size:2.5rem;height: 3rem;}
 			.container, .signin{width:50vw;max-height:60vh;}	
-.fa-eye, .fa-eye-slash{margin-left:432px;}
+.fa-eye, .fa-eye-slash{margin-left:70vw;}
 }
