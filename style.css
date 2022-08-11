@@ -41,10 +41,18 @@ box-shadow:5px 5px 20px 2px black;}
 
 @media(min-width:700px) and (max-width:1024px){
 .container,.signin{width: 609px;max-height: 487px;font-size:1.5rem;}
-.fa-eye, .fa-eye-slash{margin-left:60vw;}
+.fa-eye, .fa-eye-slash{margin-left:55vw;}
 				
 }
-@media(min-width:1024px){:root{font-size:2.5rem;height: 3rem;}
-			.container, .signin{width:70vw;max-height:85vh;}	
-.fa-eye, .fa-eye-slash{margin-left:70vw;}
+@media(min-width:1680px){:root{font-size:2.5rem;height: 3rem;}
+			input:placeholder{font-size:2rem;}.container, .signin{width:70vw;max-height:85vh;}	
+.fa-eye, .fa-eye-slash{margin-left:55vw;}
+
+}
+
+@media(min-width:1024px)and(max-width:1600px){
+:root{font-size:2.5rem;height: 3rem;}
+			input:placeholder{font-size:2rem;}.container, .signin{width:70vw;max-height:95vh;}	
+.fa-eye, .fa-eye-slash{margin-left:55vw;}
+
 }
