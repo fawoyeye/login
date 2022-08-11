@@ -12,7 +12,7 @@ box-shadow:5px 5px 20px 2px black;}
 .container p{font-size: 1rem;margin:0.1rem;margin: auto;}
 .container input{height: 1rem;border-radius: 3px;border: solid #00493a 1px;width: 50vw;margin: auto;background: transparent;}
 .container h1, .signin h1{text-align:center;color: #00493a;}
-.buttons{display:flex;flex-direction:row;justify-content:space-around;}
+.buttons{display:flex;flex-direction:row;justify-content:space-around;font-size:1rem}
 .main{display:flex;align-items:center;width:100%;max-height:100vh}
 .container select{height: 2rem;border-radius: 3px;border: solid #00493a 1px;width: 50vw;margin:auto;background: transparent;}
 .container form{padding-left:7px}
@@ -31,7 +31,7 @@ box-shadow:5px 5px 20px 2px black;}
 .signin input:hover{box-shadow:0 0 20px 5px #606462;border:none;}
 
 .signin p{color: #00493a;margin-left:0.7rem;font-size:1rem;}
-.signin button{width: 75%;height: 2rem;margin-left:10px;margin-top:1rem;border-radius: 3px;border:none;background: #00493a;display:block;}
+.signin button{width: 75%;height: 2rem;margin-left:10px;margin-top:1rem;font-size:1rem;border-radius: 3px;border:none;background: #00493a;display:block;}
 .pass{}
 
 .fa-eye, .fa-eye-slash{color:grey;z-index:2;margin-left:200px;position:absolute;}
@@ -41,18 +41,18 @@ box-shadow:5px 5px 20px 2px black;}
 
 @media(min-width:700px) and (max-width:1024px){
 .container,.signin{width: 609px;max-height: 487px;font-size:1.5rem;}
-.fa-eye, .fa-eye-slash{margin-left:55vw;}
+.fa-eye, .fa-eye-slash{margin-left:50vw;}
 				
 }
 @media(min-width:1680px){:root{font-size:2.5rem;height: 3rem;}
-			input:placeholder{font-size:2rem;}.container, .signin{width:70vw;max-height:85vh;}	
-.fa-eye, .fa-eye-slash{margin-left:55vw;}
+			input::placeholder{font-size:2rem;}.container, .signin{width:70vw;max-height:85vh;}	
+.fa-eye, .fa-eye-slash{margin-left:50vw;}
 
 }
 
 @media(min-width:1024px)and(max-width:1600px){
-:root{font-size:2.5rem;height: 3rem;}
-			input:placeholder{font-size:2rem;}.container, .signin{width:70vw;max-height:95vh;}	
-.fa-eye, .fa-eye-slash{margin-left:55vw;}
+:root{font-size:2.5rem;height: 2rem;}
+			input::placeholder{font-size:1.5rem;}.container, .signin{width:80vw;max-height:98vh;}	
+.fa-eye, .fa-eye-slash{margin-left:50vw;}
 
 }
