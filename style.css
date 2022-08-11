@@ -2,7 +2,7 @@
 body {font-family:'noto sans', helvetica;
 		background: #00735c;		
 }
-.container{width: 75vw;min-height: 60vh;display:flex;
+.container{width: 280px;min-height: 250px;display:flex;
 align-self:center;background-color:#edf0ee;border-radius:20px;margin:auto;color:#00493a;
 flex-direction:column;justify-content:center;overflow:hidden;
 box-shadow:5px 5px 20px 2px black;}
@@ -13,7 +13,7 @@ box-shadow:5px 5px 20px 2px black;}
 .container input{height: 1rem;border-radius: 3px;border: solid #00493a 1px;width: 50vw;margin: auto;background: transparent;}
 .container h1, .signin h1{text-align:center;color: #00493a;}
 .buttons{display:flex;flex-direction:row;justify-content:space-around;}
-.main{display:flex;align-items:center;width:100%;min-height:100vh}
+.main{display:flex;align-items:center;width:100%;max-height:100vh}
 .container select{height: 2rem;border-radius: 3px;border: solid #00493a 1px;width: 50vw;margin:auto;background: transparent;}
 .container form{padding-left:7px}
 .container label{padding:7px 0px 7px 0px;}
@@ -25,15 +25,26 @@ box-shadow:5px 5px 20px 2px black;}
 
 
 
-.main2{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;width:100vw;font-family:helvetica;}
-.signin{background: #edf0ee;height: 400px;width: 50vw;margin:auto;display:flex;flex-direction:column;justify-content:center;box-shadow:0 0 20px 5px black;flex-wrap:wrap;border-radius: 20px;}
-.signin input{background: transparent;border:solid 2px #00493a;height: 2rem;border-radius: 3px;width: 50%;margin-left:10px;}
-.signin input:hover{box-shadow:0 0 20px 5px #606462;border:none}
+.main2{display:flex;align-items:center;max-height:100vh;width:100vw;font-family:helvetica;}
+.signin{background: #edf0ee;min-height: 250px;min-width:280px;margin:auto;display:flex;flex-direction:column;justify-content:center;box-shadow:0 0 20px 5px black;flex-wrap:wrap;border-radius: 20px;position:relative;}
+.signin input{background: transparent;border:solid 2px #00493a;height: 2rem;border-radius: 3px;min-width: 75%;margin-left:0.7rem;position:relative;}
+.signin input:hover{box-shadow:0 0 20px 5px #606462;border:none;}
 
-.signin p{color: #00493a;margin-left:10px;}
-.signin button{width: 50%;height: 2rem;margin-left:10px;margin-top:1rem;border-radius: 3px;border:none;background: #00493a;display:block;}
+.signin p{color: #00493a;margin-left:0.7rem;font-size:1rem;}
+.signin button{width: 75%;height: 2rem;margin-left:10px;margin-top:1rem;border-radius: 3px;border:none;background: #00493a;display:block;}
+.pass{}
 
-@media(max-width:960px){
-.container,.signin{width: 75vw;}
+.fa-eye, .fa-eye-slash{color:grey;z-index:2;margin-left:200px;position:absolute;}
+
+.fa-eye-slash{display:none;}
+.j{display:flex;flex-direction:row;align-items:center;}
+
+@media(min-width:700px) and (max-width:1024px){
+.container,.signin{width: 609px;max-height: 487px;font-size:1.5rem;}
+.fa-eye, .fa-eye-slash{margin-left:620px;}
 				
+}
+@media(min-width:1024px){:root{font-size:2.5rem;height: 3rem;}
+			.container, .signin{width:50vw;max-height:60vh;}	
+.fa-eye, .fa-eye-slash{margin-left:432px;}
 }
