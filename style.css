@@ -45,12 +45,12 @@ box-shadow:5px 5px 20px 2px black;}
 				
 }
 @media(min-width:1680px){:root{font-size:2.5rem;height: 3rem;}
-			input::placeholder{font-size:2rem;}.container, .signin{width:70vw;max-height:85vh;}	
+			input::placeholder{font-size:1.5rem;}.container, .signin{width:70vw;max-height:85vh;}	
 .fa-eye, .fa-eye-slash{margin-left:50vw;}
 
 }
 
-@media(min-width:1024px)and(max-width:1600px){
+@media(min-width:1024px)and(max-width:1670px){
 :root{font-size:2.5rem;height: 2rem;}
 			input::placeholder{font-size:1.5rem;}.container, .signin{width:80vw;max-height:98vh;}	
 .fa-eye, .fa-eye-slash{margin-left:50vw;}
